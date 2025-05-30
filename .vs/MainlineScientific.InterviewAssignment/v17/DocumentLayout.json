@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0538AB41-A959-4D54-8CE7-EF29F6B26820}|MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment.csproj|c:\\am.projects\\am.learning\\mainlinlescientific\\mainlinescientific.interviewassignment\\mainlinescientific.interviewassignment\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{0538AB41-A959-4D54-8CE7-EF29F6B26820}|MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment.csproj|solutionrelative:mainlinescientific.interviewassignment\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment\\.gitignore",
+              "RelativeDocumentMoniker": "MainlineScientific.InterviewAssignment\\.gitignore",
+              "ToolTip": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment\\.gitignore",
+              "RelativeToolTip": "MainlineScientific.InterviewAssignment\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-30T02:43:12.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
