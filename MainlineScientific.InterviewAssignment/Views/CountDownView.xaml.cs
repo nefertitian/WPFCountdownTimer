@@ -28,9 +28,6 @@ namespace MainlineScientific.InterviewAssignment.Views
 
         private readonly CancellationTokenSource _ctsComplexOpTask = new CancellationTokenSource();
 
-        //public event EventHandler PauseComplexOpThread; //use Observable object?
-        //public event EventHandler ResumeComplexOpThread; //use Observable object instead?
-
         /// <summary>
         /// Synchonization primitive for pausing/resuming Countdown Timer
         /// To pause timer, call timerEvent.Reset()
@@ -135,14 +132,9 @@ namespace MainlineScientific.InterviewAssignment.Views
 
             try
             {
-                //first pause complexop thread
-                //PauseComplexOpThread?.Invoke(this, EventArgs.Empty);
-
-                //second pause timer displayed on CountDownView
-                timerEvent.Reset();
+                timerEvent.Reset(); //pause timer
 
                 Log.Information($"[{Environment.CurrentManagedThreadId}]\t Timer has been paused");
-
             }
             catch (Exception ex)
             {
@@ -157,8 +149,7 @@ namespace MainlineScientific.InterviewAssignment.Views
         {
             Log.Information("[" + Environment.CurrentManagedThreadId + "] " + "--> ResumeTimer() - " + this.GetType().ToString());
 
-            //resume timer displayed on CountDownView
-            timerEvent.Set();
+            timerEvent.Set(); //resume timer
 
             Log.Information($"[{Environment.CurrentManagedThreadId}]\t Timer has been resumed");
 

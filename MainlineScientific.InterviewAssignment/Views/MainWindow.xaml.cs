@@ -23,10 +23,6 @@ namespace MainlineScientific.InterviewAssignment.Views
 
         private Task? _complexOperationTask;
 
-        //to pause, call pauseComplexOpEvent.Reset()
-        //to resume, call pauseComplexOpEvent.Set()
-        //static ManualResetEventSlim pauseComplexOpEvent = new ManualResetEventSlim(true); //true = not paused at start, false = paused at start
-
         public MainWindow()
         {
             Log.Information("[" + Environment.CurrentManagedThreadId + "] " + "-->MainWindow() - " + this.GetType().ToString());
@@ -44,16 +40,6 @@ namespace MainlineScientific.InterviewAssignment.Views
             btnRunComplexOp.IsEnabled = false;
 
             _cts = new CancellationTokenSource();
-            //pauseComplexOpEvent.Set(); //make sure it is not paused
-
-            //countDownView.PauseComplexOpThread += (s, args) =>
-            //{
-            //    //pauseComplexOpEvent.Reset(); //pause thread
-            //};
-            //countDownView.ResumeComplexOpThread += (s, args) =>
-            //{
-            //    //pauseComplexOpEvent.Set(); //resume thread
-            //};
 
             try
             {

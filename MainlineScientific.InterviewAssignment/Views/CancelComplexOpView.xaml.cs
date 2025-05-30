@@ -30,6 +30,7 @@ namespace MainlineScientific.InterviewAssignment.Views
             Log.Information("[" + Environment.CurrentManagedThreadId + "] " + "-->CancelComplexOpView() - " + this.GetType().ToString());
 
             InitializeComponent();
+
             this.DataContext = new CountDownViewModel();
 
             Log.Information("[" + Environment.CurrentManagedThreadId + "] " + "<--CancelComplexOpView() - " + this.GetType().ToString());
@@ -41,9 +42,18 @@ namespace MainlineScientific.InterviewAssignment.Views
 
             Log.Information($"[{Environment.CurrentManagedThreadId}]\t Cancellation Request Aborted");
 
-            CancelRequestCancelled?.Invoke(this, EventArgs.Empty);
-
-            this.Close();
+            try
+            {
+                CancelRequestCancelled?.Invoke(this, EventArgs.Empty);
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"[{Environment.CurrentManagedThreadId}]\t{ex.Message}");
+            }
+            finally
+            {
+                this.Close();
+            }
 
             Log.Information("[" + Environment.CurrentManagedThreadId + "] " + "<--btnAbortCancellation_Click(sender, e) - " + this.GetType().ToString());
         }
@@ -54,7 +64,14 @@ namespace MainlineScientific.InterviewAssignment.Views
 
             Log.Information($"[{Environment.CurrentManagedThreadId}]\t Cancelling Background Task");
 
-            CancelRequested?.Invoke(this, EventArgs.Empty);
+            try
+            {
+                CancelRequested?.Invoke(this, EventArgs.Empty);
+            }
+            catch(Exception ex)
+            {
+                Log.Error($"[{Environment.CurrentManagedThreadId}]\t{ex.Message}");
+            }
 
             Log.Information("[" + Environment.CurrentManagedThreadId + "] " + "<--btnConfirmCancellation_Click(sender, e) - " + this.GetType().ToString());
         }

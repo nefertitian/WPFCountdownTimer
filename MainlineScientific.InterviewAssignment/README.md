@@ -10,7 +10,7 @@ This project is a WPF desktop application that simulates a long-running operatio
 - **Run a complex operation**: Starts a 10-second simulated operation in the background.
 - **Animated Countdown**: A popup dialog displays a countdown timer (10 to 1) while the operation is running.
 - **Cancel Support**: Users can cancel the timer, pausing the countdown and prompting for confirmation. 
-	- **Note**: Pausing the timer does not pause the complex operation thread.
+	- **Note**: Pausing the timer does not pause the complex operation thread. If the timer is running even if the complex operation thread has exited, a warning is displayed
 - **Abort or Confirm Cancellation**: 
   - *Abort Cancellation*: Resumes the timer without cancelling the 'Complex Operation' task. 
   - *Confirm Cancellation*: Stops the timer immediately after cancelling the 'Complex Operation' task.
