@@ -59,7 +59,21 @@ namespace MainlineScientific.InterviewAssignment.Views
 
             tbCountDownValue.Text = countdownvalue.ToString();
 
-            Log.Information("[" + Environment.CurrentManagedThreadId + "] " + "<--UpdateCountDownValue() " + this.GetType().ToString());
+            if (countdownvalue == 0)
+            {
+                Log.Warning($"[{Environment.CurrentManagedThreadId}]\t Countdown value is zero, closing Countdown window ");
+
+                //countdown has completed, close window
+                this.Close();
+            }
+            else if (countdownvalue> 0 && _ctsComplexOpTask.IsCancellationRequested)
+            {
+                Log.Warning($"[{Environment.CurrentManagedThreadId}]\t The complex operation thread has already been cancelled even though the timer stil hasn't reached");
+            }
+
+
+
+                Log.Information("[" + Environment.CurrentManagedThreadId + "] " + "<--UpdateCountDownValue() " + this.GetType().ToString());
         }
 
         public async void StartCountdown()

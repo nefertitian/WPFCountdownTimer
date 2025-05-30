@@ -43,7 +43,6 @@ namespace MainlineScientific.InterviewAssignment.Views
 
             _cts = new CancellationTokenSource();
             //pauseComplexOpEvent.Set(); //make sure it is not paused
-            var countDownView = new CountDownView(_cts);
 
             //countDownView.PauseComplexOpThread += (s, args) =>
             //{
@@ -57,6 +56,7 @@ namespace MainlineScientific.InterviewAssignment.Views
             try
             {
                 var task = Task.Run(() => DoBackgroundWork(_cts), _cts.Token);
+                var countDownView = new CountDownView(_cts);
                 countDownView.Show();
                 await task;
             }
@@ -86,9 +86,13 @@ namespace MainlineScientific.InterviewAssignment.Views
                 }
                 Log.Information("[" + Environment.CurrentManagedThreadId + "]\tComplex Operation Thread Execution has completed");
             }
+            catch(OperationCanceledException ex)
+            {
+                Log.Warning($"[{Environment.CurrentManagedThreadId}]\t - User cancelled the operation: {ex.Message}");
+            }
             catch (Exception ex)
             {
-                Log.Error(ex.Message);
+                Log.Error($"[{Environment.CurrentManagedThreadId}]\t{ex.Message}");
             }
 
             Log.Information("[" + Environment.CurrentManagedThreadId + "] " + "<--DoBackgroundWork(cts) - " + this.GetType().ToString());
