@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0538AB41-A959-4D54-8CE7-EF29F6B26820}|MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment.csproj|c:\\am.projects\\am.learning\\mainlinlescientific\\mainlinescientific.interviewassignment\\mainlinescientific.interviewassignment\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{0538AB41-A959-4D54-8CE7-EF29F6B26820}|MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment.csproj|solutionrelative:mainlinescientific.interviewassignment\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
@@ -48,6 +52,19 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "README.md",
+              "DocumentMoniker": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-05-30T05:11:17.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "README.md",
               "DocumentMoniker": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment\\README.md",
               "RelativeDocumentMoniker": "MainlineScientific.InterviewAssignment\\README.md",
               "ToolTip": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment\\README.md",
@@ -59,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CancelComplexOpView.xaml.cs",
               "DocumentMoniker": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment\\Views\\CancelComplexOpView.xaml.cs",
               "RelativeDocumentMoniker": "MainlineScientific.InterviewAssignment\\Views\\CancelComplexOpView.xaml.cs",
@@ -71,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment\\Views\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainlineScientific.InterviewAssignment\\Views\\MainWindow.xaml.cs",
@@ -83,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CountDownView.xaml.cs",
               "DocumentMoniker": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment\\Views\\CountDownView.xaml.cs",
               "RelativeDocumentMoniker": "MainlineScientific.InterviewAssignment\\Views\\CountDownView.xaml.cs",
