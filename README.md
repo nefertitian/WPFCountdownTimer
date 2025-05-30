@@ -1,0 +1,1 @@
+**Refer to README.md at the location MainlineScientific.InterviewAssignment/README.md  **
