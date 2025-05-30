@@ -9,7 +9,7 @@
     <StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Label Content="Countdown:" HorizontalAlignment="Center" Width="126" FontSize="20"/>
-            <TextBlock x:Name="tbCountDownValue" HorizontalAlignment="Center" FontSize="20" Width="50"/>
+            <TextBlock x:Name="tbCountDownValue" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Width="50"/>
         </StackPanel>
         <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Center" FontSize="20" Margin="20" Width="224" Click="btnCancel_Click"/>
     </StackPanel>

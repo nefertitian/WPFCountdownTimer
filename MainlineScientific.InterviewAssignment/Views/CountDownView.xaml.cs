@@ -66,10 +66,10 @@ namespace MainlineScientific.InterviewAssignment.Views
                 //countdown has completed, close window
                 this.Close();
             }
-            else if (countdownvalue> 0 && _ctsComplexOpTask.IsCancellationRequested)
-            {
-                Log.Warning($"[{Environment.CurrentManagedThreadId}]\t The complex operation thread has already been cancelled even though the timer stil hasn't reached");
-            }
+            //else if (countdownvalue> 0 && _ctsComplexOpTask.IsCancellationRequested)
+            //{
+            //    Log.Warning($"[{Environment.CurrentManagedThreadId}]\t The complex operation thread has already been cancelled even though the timer stil hasn't reached");
+            //}
 
 
 

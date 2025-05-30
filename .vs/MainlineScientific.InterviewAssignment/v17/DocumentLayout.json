@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0538AB41-A959-4D54-8CE7-EF29F6B26820}|MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment.csproj|c:\\am.projects\\am.learning\\mainlinlescientific\\mainlinescientific.interviewassignment\\mainlinescientific.interviewassignment\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0538AB41-A959-4D54-8CE7-EF29F6B26820}|MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment.csproj|solutionrelative:mainlinescientific.interviewassignment\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0538AB41-A959-4D54-8CE7-EF29F6B26820}|MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment.csproj|c:\\am.projects\\am.learning\\mainlinlescientific\\mainlinescientific.interviewassignment\\mainlinescientific.interviewassignment\\views\\countdownview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0538AB41-A959-4D54-8CE7-EF29F6B26820}|MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment.csproj|solutionrelative:mainlinescientific.interviewassignment\\views\\countdownview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0538AB41-A959-4D54-8CE7-EF29F6B26820}|MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment.csproj|c:\\am.projects\\am.learning\\mainlinlescientific\\mainlinescientific.interviewassignment\\mainlinescientific.interviewassignment\\views\\countdownview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0538AB41-A959-4D54-8CE7-EF29F6B26820}|MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment.csproj|solutionrelative:mainlinescientific.interviewassignment\\views\\countdownview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0538AB41-A959-4D54-8CE7-EF29F6B26820}|MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment.csproj|c:\\am.projects\\am.learning\\mainlinlescientific\\mainlinescientific.interviewassignment\\mainlinescientific.interviewassignment\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0538AB41-A959-4D54-8CE7-EF29F6B26820}|MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment.csproj|solutionrelative:mainlinescientific.interviewassignment\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,12 +43,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CountDownView.xaml",
+              "DocumentMoniker": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment\\Views\\CountDownView.xaml",
+              "RelativeDocumentMoniker": "MainlineScientific.InterviewAssignment\\Views\\CountDownView.xaml",
+              "ToolTip": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment\\Views\\CountDownView.xaml",
+              "RelativeToolTip": "MainlineScientific.InterviewAssignment\\Views\\CountDownView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-30T03:34:33.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment\\Views\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainlineScientific.InterviewAssignment\\Views\\MainWindow.xaml.cs",
               "ToolTip": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment\\Views\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainlineScientific.InterviewAssignment\\Views\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFoAAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAAE0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T03:12:06.584Z",
               "EditorCaption": ""
@@ -57,7 +73,7 @@
               "RelativeDocumentMoniker": "MainlineScientific.InterviewAssignment\\Views\\CountDownView.xaml.cs",
               "ToolTip": "C:\\AM.Projects\\AM.Learning\\MainlinleScientific\\MainlineScientific.InterviewAssignment\\MainlineScientific.InterviewAssignment\\Views\\CountDownView.xaml.cs",
               "RelativeToolTip": "MainlineScientific.InterviewAssignment\\Views\\CountDownView.xaml.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T02:59:42.093Z",
               "EditorCaption": ""
