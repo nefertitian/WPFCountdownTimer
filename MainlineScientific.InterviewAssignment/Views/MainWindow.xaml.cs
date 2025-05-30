@@ -21,6 +21,8 @@ namespace MainlineScientific.InterviewAssignment.Views
     {
         CancellationTokenSource? _cts;
 
+        private Task? _complexOperationTask;
+
         //to pause, call pauseComplexOpEvent.Reset()
         //to resume, call pauseComplexOpEvent.Set()
         //static ManualResetEventSlim pauseComplexOpEvent = new ManualResetEventSlim(true); //true = not paused at start, false = paused at start
@@ -55,14 +57,14 @@ namespace MainlineScientific.InterviewAssignment.Views
 
             try
             {
-                var task = Task.Run(() => DoBackgroundWork(_cts), _cts.Token);
+                TaskManager.BackgroundTask = Task.Run(() => DoBackgroundWork(_cts), _cts.Token);
                 var countDownView = new CountDownView(_cts);
                 countDownView.Show();
-                await task;
+                await TaskManager.BackgroundTask;
             }
             catch (Exception ex)
             {
-                Log.Error(ex.Message);
+                Log.Error($"{Environment.CurrentManagedThreadId}\t{ex.Message}");
             } 
             finally
             {
