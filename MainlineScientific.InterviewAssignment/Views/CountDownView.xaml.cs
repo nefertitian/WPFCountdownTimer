@@ -65,7 +65,7 @@ namespace MainlineScientific.InterviewAssignment.Views
             }
             else if (countdownvalue>0 && (TaskManager.BackgroundTask?.IsCanceled == true || TaskManager.BackgroundTask?.IsCompleted == true)) 
             {
-                Log.Warning($"[{Environment.CurrentManagedThreadId}]\t The complex operation thread has already been cancelled or completed even if the timer is still on");
+                Log.Warning($"[{Environment.CurrentManagedThreadId}]\t The complex operation thread has already been cancelled/completed even if the timer is still on");
             }
 
             Log.Information("[" + Environment.CurrentManagedThreadId + "] " + "<--UpdateCountDownValue() " + this.GetType().ToString());
@@ -106,9 +106,28 @@ namespace MainlineScientific.InterviewAssignment.Views
 
             cancelComplexOpView.CancelRequested += (s, args) =>
             {
-                _ctsComplexOpTask.Cancel();
-                Log.Information($"[{Environment.CurrentManagedThreadId}]\t Background Task Cancelled");
-                cancelComplexOpView.Close();
+                try
+                {
+                    if (!(TaskManager.BackgroundTask?.Status == TaskStatus.Running))
+                    {
+                        Log.Error($"Complex Operation Thread execution has already been either completed or cancelled!");
+                    }
+                    else
+                    {
+                        _ctsComplexOpTask.Cancel(true);
+                    }
+
+                    Log.Information($"[{Environment.CurrentManagedThreadId}]\t Background Task Cancelled");
+                    cancelComplexOpView.Close();
+                }
+                catch (Exception ex)
+                {
+                    Log.Error($"Complex Operation had already been cancelled or completed! Error Message: {ex.Message}");
+                }
+                finally
+                {
+                }
+
                 this.Close();
             };
 
